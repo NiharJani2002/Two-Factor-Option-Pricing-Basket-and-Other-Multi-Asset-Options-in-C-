@@ -390,3 +390,5 @@ The code doesn’t include explicit unit tests, but you can validate it by:
 To verify accuracy:
 - Increase `num_simulations` (e.g., from 10,000 to 1,000,000) and check if the price converges (changes less).
 - The confidence interval (`±` value) should shrink as the number of simulations increases, indicating a more precise estimate.
+
+P.S: This implementation is for educational and research purposes. Financial decisions should not be made solely based on this model without considering its limitations and consulting with qualified financial professionals.
