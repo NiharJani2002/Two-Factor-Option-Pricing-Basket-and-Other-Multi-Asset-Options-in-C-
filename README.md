@@ -391,4 +391,55 @@ To verify accuracy:
 - Increase `num_simulations` (e.g., from 10,000 to 1,000,000) and check if the price converges (changes less).
 - The confidence interval (`±` value) should shrink as the number of simulations increases, indicating a more precise estimate.
 
+=== Interactive Multi-Asset Option Pricing ===
+
+Enter number of underlying assets (2 recommended): 2
+
+--- Asset Parameters ---
+Asset 1:
+  Initial price (S0): $100
+  Expected return (mu): 0.05
+  Volatility (sigma): 0.20
+
+Asset 2:
+  Initial price (S0): $110  
+  Expected return (mu): 0.06
+  Volatility (sigma): 0.25
+
+--- Correlation Matrix ---
+Correlation between Asset 1 and Asset 2: 0.3
+
+--- Option Parameters ---
+Time to maturity (years): 1.0
+Risk-free rate: 0.03
+
+--- Simulation Parameters ---
+Number of Monte Carlo simulations: 100000
+
+Select option type to price:
+1. Basket Option
+2. Rainbow Option (Best-of)  
+3. Rainbow Option (Worst-of)
+4. Exchange Option
+5. Spread Option
+6. Price All Options
+7. Correlation Sensitivity Analysis
+Enter your choice (1-7): 1
+
+--- BASKET OPTION ---
+
+Strike price: $105
+
+Call or Put option? (C/P): C
+
+Enter weights for basket (should sum to 1.0):
+
+Weight for Asset 1: 0.6
+
+Weight for Asset 2: 0.4
+
+Basket Call Results:
+
+Price: $12.45 ± $0.23
+
 P.S: This implementation is for educational and research purposes. Financial decisions should not be made solely based on this model without considering its limitations and consulting with qualified financial professionals.
